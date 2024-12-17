@@ -2,10 +2,15 @@ import numpy as np
 import math
 
 # Coordinate x, y
+PIXELS_PER_CM = float(input('Pixel per cm : '))
 x_o = float(input('x origin : '))  # Convert input to float
+x_o = x_o / PIXELS_PER_CM
 y_o = float(input('y origin : '))  # Convert input to float
+y_o = y_o / PIXELS_PER_CM
 x = float(input('x of local OJ : '))  # Convert input to float
+x = x / PIXELS_PER_CM
 y = float(input('y of local OJ : '))  # Convert input to float
+y = y / PIXELS_PER_CM
 phi = np.pi/2
 
 # Calculate the differences
